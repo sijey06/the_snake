@@ -48,7 +48,8 @@ class GameObject:
 
     def draw(self):
         """Отрисовка обьектов на экране.
-        Метод определен в дочерних классах."""
+        Метод определен в дочерних классах.
+        """
         pass
 
 
@@ -126,7 +127,8 @@ class Snake(GameObject):
 
     def get_head_position(self, head_position):
         """Обработка выхода головы змейки
-        за пределы игрового поля."""
+        за пределы игрового поля.
+        """
         x, y = head_position
         x = (x + GRID_WIDTH * GRID_SIZE) % (GRID_WIDTH * GRID_SIZE)
         y = (y + GRID_HEIGHT * GRID_SIZE) % (GRID_HEIGHT * GRID_SIZE)
