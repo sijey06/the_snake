@@ -187,6 +187,7 @@ def main():
 
         if snake.get_head_position() in snake.positions[1:]:
             snake.reset()  # Сброс состояния змейки
+            count = 0
 
         pg.display.update()  # Обновление экрана
 
